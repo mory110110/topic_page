@@ -10,6 +10,8 @@ body {
     margin: 2rem; use this to show the difference between margin and padding --*/
     border: 3px dotted green; /*-- border shorthand property --*/
     color: #333; /*-- text color is inherited by child elements --*/
+    font-size: 1.6rem;
+    font-family: 'Gentium Book Plus', serif;
 }
 
 img {
@@ -19,7 +21,56 @@ img {
 main {
   background-color: #ffffff;
 }
-
+/* nav ul { */
+nav {
+  list-style: none;
+  padding: 1em;
+  border: 2px dashed blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 0;
+}
+nav ul {
+  width: 400px;
+  list-style: none;
+  padding: 1em;
+  border: 2px dashed blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 0;
+}
+/*-- Hero Unit Styles--*/
+header {
+  text-align: center;
+  /* width: 510px; */ /*this messes up every thing*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border: 2px dashed gray;
+  display: flex;
+  flex-direction: column;
+}
+header h1 {
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 auto;
+}
+.small {
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  color: #666;
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+}
 p {
   margin-bottom: .67em;
 }
@@ -44,7 +95,7 @@ h2 {
 
 .parent {/*--flex container styles --*/
     margin-bottom: 2rem;
-    height: 300px; /*-- sets height for demo purposes --*/
+    height: 1000px; /*-- sets height for demo purposes --*/
     background: #FAFAFA; /*-- sets background to light gray --*/
     padding: 1rem; /*-- adds 1em of padding all around --*/
     border: 2px dashed blue;
