@@ -4,25 +4,54 @@ html {
 }
 
 body {
-    background-color: #DADADA; /*-- background color for outermost container  --*/
-    padding: 2rem; /*-- padding is shorthand for -top, -right, -bottom, and -left --*/
-    /*--
-    margin: 2rem; use this to show the difference between margin and padding --*/
-    border: 3px dotted green; /*-- border shorthand property --*/
-    color: #333; /*-- text color is inherited by child elements --*/
     font-size: 1.6rem;
-    font-family: 'Gentium Book Plus', serif;
+    font-family: system-ui, -apple-system, 'Gentium Book Plus', serif; /* adds system fonts in the order so if they are not installed on a machine it uses defaults*/
+    line-height: 1.15;
 }
+
+h1 {font-size: 3.6rem;}
+h2 {font-size: 2.8rem;}
+h3 {font-size: 2.4rem;}
+h4 {font-size: 2rem;}
+h5 {font-size: 1.8rem;}
+h6 {font-size: 1.6rem;}
+
+h1, h2, h3, h4, h5, h6 {font-weight: 600;}
 
 img {
 	width: 100%;
 	height: auto;
 }
-main {
-  background-color: #ffffff;
+
+svg {
+  height: 100%;
+  width: 100%;
+  fill: currentColor;
+  pointer-events: none;
 }
+
+
+/* Document Styles */
+
+body {
+  
+  background-color: #e32020; /*-- background color for outermost container  --*/
+  padding: 2rem; /*-- padding is shorthand for -top, -right, -bottom, and -left --*/
+  /*--
+  margin: 2rem; use this to show the difference between margin and padding --*/
+  border: 3px dotted green; /*-- border shorthand property --*/
+  color: #333; /*-- text color is inherited by child elements --*/
+
+  background-image: linear-gradient(rgb(128, 98, 0),rgb(128, 47, 0));
+}
+
+/* main {
+  background-color: #ffffff;
+} */
 /* nav ul { */
 nav {
+  background-color: #e32020;
+  color: black; /*text color*/
   list-style: none;
   padding: 1em;
   border: 2px dashed blue;
@@ -32,7 +61,25 @@ nav {
   flex-direction: row;
   margin-top: 0;
 }
-nav ul {
+
+nav img{
+  height: 60px; 
+  /* because in the navigation bar we are concerned about the height we fix that */
+  width: auto;
+  /* we keep the other dimension auto */
+}
+nav div{
+  display: flex;
+}
+.logo {
+  align-items: center;
+  gap: 2rem;
+}
+.links {
+  gap: 4rem;
+}
+
+/* nav ul {
   width: 400px;
   list-style: none;
   padding: 1em;
@@ -42,7 +89,7 @@ nav ul {
   justify-content: space-between;
   flex-direction: row;
   margin-top: 0;
-}
+} */
 /*-- Hero Unit Styles--*/
 header {
   text-align: center;
@@ -93,10 +140,22 @@ h2 {
     margin: 1rem auto;    a shorter way to write the previous two rules--*/
 }
 
+
+/*-- Main Menu Styles--*/
+article {
+  font-size: 2.5rem; /*-- by default, headings are larger, but this makes them a little bigger still --*/
+  font-weight: 900; /*-- by default headings are bold, but this makes them the boldest--*/
+  color: #555; /*-- makes heading text a lighter color gray --*/
+  margin-top: 1rem; /*-- adds space outside the border on the top--*/
+  margin-bottom: 1rem; /*-- adds space outside the border on the bottom --*/
+  /*--
+  margin: 1rem auto;    a shorter way to write the previous two rules--*/
+}
+
 .parent {/*--flex container styles --*/
     margin-bottom: 2rem;
-    height: 1000px; /*-- sets height for demo purposes --*/
-    background: #FAFAFA; /*-- sets background to light gray --*/
+    /*-- height: 1000px; sets height for demo purposes --*/
+    background: #f2da7db1; /*-- sets background to light gray --*/
     padding: 1rem; /*-- adds 1em of padding all around --*/
     border: 2px dashed blue;
     /*-- change styles below this line --*/
@@ -118,4 +177,88 @@ h2 {
     order: 0;
 }
 
+.persian {/*--common columns styles --*/
+  margin-bottom: 2rem;
+  /*-- height: 1000px; sets height for demo purposes --*/
+  background:  #f2da7db1; /*-- sets background to light gray --*/
+  padding: 1rem; /*-- adds 1em of padding all around --*/
+  border: 2px dashed blue;
+  /*-- change styles below this line --*/
+  display: flex; /*-- sets the display mode--*/
+  flex-direction: row; /*-- sets direction row or column --*/
+  justify-content: space-between; /*-- aligns content on main axis --*/
+  align-items: center; /*-- aligns content on secondary axis --*/
+  flex-wrap: nowrap; /*-- determines whether content wraps or not --*/
+}
 
+.vegetables {/*--common columns styles --*/
+  margin-bottom: 2rem;
+  /*-- height: 1000px; sets height for demo purposes --*/
+  background:  #f2da7db1; /*-- sets background to light gray --*/
+  padding: 1rem; /*-- adds 1em of padding all around --*/
+  border: 2px dashed blue;
+  /*-- change styles below this line --*/
+  display: flex; /*-- sets the display mode--*/
+  flex-direction: column; /*-- sets direction row or column --*/
+  justify-content: space-between; /*-- aligns content on main axis --*/
+  align-items: center; /*-- aligns content on secondary axis --*/
+  flex-wrap: nowrap; /*-- determines whether content wraps or not --*/
+}
+
+.legumes {/*--common columns styles --*/
+  margin-bottom: 2rem;
+  /*-- height: 1000px; sets height for demo purposes --*/
+  background:  #f2da7db1; /*-- sets background to light gray --*/
+  padding: 1rem; /*-- adds 1em of padding all around --*/
+  border: 2px dashed blue;
+  /*-- change styles below this line --*/
+  display: flex; /*-- sets the display mode--*/
+  flex-direction: row; /*-- sets direction row or column --*/
+  justify-content: space-between; /*-- aligns content on main axis --*/
+  align-items: center; /*-- aligns content on secondary axis --*/
+  flex-wrap: nowrap; /*-- determines whether content wraps or not --*/
+}
+
+.nuts {/*--common columns styles --*/
+  margin-bottom: 2rem;
+  /*-- height: 1000px; sets height for demo purposes --*/
+  background:  #f2da7db1; /*-- sets background to light gray --*/
+  padding: 1rem; /*-- adds 1em of padding all around --*/
+  border: 2px dashed blue;
+  /*-- change styles below this line --*/
+  display: flex; /*-- sets the display mode--*/
+  flex-direction: row; /*-- sets direction row or column --*/
+  justify-content: space-between; /*-- aligns content on main axis --*/
+  align-items: center; /*-- aligns content on secondary axis --*/
+  flex-wrap: nowrap; /*-- determines whether content wraps or not --*/
+}
+
+.meat {/*--common columns styles --*/
+  margin-bottom: 2rem;
+  /*-- height: 1000px; sets height for demo purposes --*/
+  background:  #f2da7db1; /*-- sets background to light gray --*/
+  padding: 1rem; /*-- adds 1em of padding all around --*/
+  border: 2px dashed blue;
+  /*-- change styles below this line --*/
+  display: flex; /*-- sets the display mode--*/
+  flex-direction: column; /*-- sets direction row or column --*/
+  justify-content: space-between; /*-- aligns content on main axis --*/
+  align-items: center; /*-- aligns content on secondary axis --*/
+  flex-wrap: nowrap; /*-- determines whether content wraps or not --*/
+}
+
+
+/* @media screen and (max-width: 768px) {
+.series {
+  flex-direction: column;
+}
+} */
+
+/* Media queries */
+@media screen and (max-width: 768px){
+  nav{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+}
