@@ -4,31 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Persian Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/reset.min.css">
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
+    <nav><!-- main menu -->
+      <div class="logo">
+        <!-- <li><a href="#">Logo</a></li> -->
+        <!-- <li><a href="#" class="active">Ch. 3</a></li> -->
+        <img src="img/logo.jpg" alt="logo">
+        <h1>Online Persian Restaurant</h1>
+      </div>
+      <div class="links">
+        <!-- <ul> -->
+          <!-- <li><a href="#">Entree </a></li>
+          <li><a href="#">Deserts </a></li>
+          <li><a href="#">Recepes </a></li>
+          <li><a href="#">Gallery </a></li> -->
+        <!-- </ul> -->
+        <a href="#">Entree </a>
+        <a href="#">Deserts </a>
+        <a href="#">Recepes </a>
+        <a href="#">Gallery </a>
+      </div>
+    </nav>
     <main id="page">
-      <nav><!-- main menu -->
-        <div class="logo">
-          <!-- <li><a href="#">Logo</a></li> -->
-          <!-- <li><a href="#" class="active">Ch. 3</a></li> -->
-           <img src="img/logo.jpg" alt="logo">
-           <h1>Online Persian Restaurant</h1>
-        </div>
-        <div class="links">
-          <!-- <ul> -->
-            <!-- <li><a href="#">Entree </a></li>
-            <li><a href="#">Deserts </a></li>
-            <li><a href="#">Recepes </a></li>
-            <li><a href="#">Gallery </a></li> -->
-          <!-- </ul> -->
-          <a href="#">Entree </a>
-          <a href="#">Deserts </a>
-          <a href="#">Recepes </a>
-          <a href="#">Gallery </a>
-        </div>
-      </nav>
+
 
       <header> <!-- hero unit -->
         <article class="parent series">
@@ -74,16 +79,16 @@
 
         <!-- flex part -->
 
-      <article class="persian">
+      <article class="content persian">
         
-        <section class="persian-pic">
+        <section class="pic persian-pic">
           <figure>
             <img src="img\food.jpg" alt="Persian Cuisine">
             <!-- <figcaption>figures can have captions and display block.</figcaption>  -->
           </figure> 
         </section>
                  
-        <section class="persian-txt">
+        <section class="txt persian-txt">
           <p>What is Persian Cuisine?</p>
           <p>Persian cuisine is a rich and diverse culinary tradition that blends fragrant spices, fresh herbs, and slow-cooked stews, creating a unique balance of flavors.
             While it shares similarities with Mediterranean cuisine through its use of olive oil, nuts, and fresh produce, and with Indian food in its love for aromatic
@@ -98,15 +103,15 @@
       </article>
          
       
-      <article class="vegetables">
+      <article class="content vegetables">
         
-        <section class="vegetables-pic">
+        <section class="pic vegetables-pic">
           <figure>
             <img src="img\green.jpg" alt="vegetables">
           </figure> 
         </section>
                 
-        <section class="vegetables-txt">
+        <section class="txt vegetables-txt">
           <p>Persian cuisine is naturally rich in fresh vegetables, offering a perfect balance of flavor and nutrition. From herb-infused stews
             to vibrant salads and hearty rice dishes, vegetables play a central role in creating both satisfying and wholesome meals.
             Staples like eggplant, tomatoes, spinach, and legumes bring depth and texture, while aromatic herbs such as parsley,
@@ -119,14 +124,14 @@
       </article>
 
 
-      <article class="legumes">
-        <section class="legumes-pic">
+      <article class="content legumes">
+        <section class="pic legumes-pic">
           
           <figure>
             <img src="img\dall.jpg" alt="dall">
           </figure> 
         </section>
-        <section class="legumes-txt">
+        <section class="txt legumes-txt">
           <p>At our restaurant, we believe that the best flavors come from the freshest ingredients. That’s why we never use pre-cooked or canned products
             with added preservatives—every dish is made from scratch using wholesome, natural ingredients. Our legumes are soaked and cooked fresh, our herbs
             and vegetables are hand-selected for peak freshness, and our meats are carefully sourced for quality. Whenever possible, we prioritize organic
@@ -136,9 +141,9 @@
         </section>
       </article>
 
-      <article class="nuts">
+      <article class="content nuts">
         
-        <section class="nuts-txt">
+        <section class="txt nuts-txt">
           <p>Persian cuisine is not only rich in flavor but also packed with essential nutrients, thanks to the diverse range of ingredients used in traditional
             recipes. From protein-rich legumes and fiber-packed grains to antioxidant-loaded fruits and heart-healthy nuts, every dish is thoughtfully crafted for
             both taste and nutrition. Nuts, such as walnuts, almonds, and pistachios, play a key role in Persian cooking, adding depth to flavors while providing
@@ -146,7 +151,7 @@
             offering a unique combination of healthy fats, plant-based protein, and antioxidants. Fresh herbs, vegetables, and aromatic spices further enhance
             the nutritional value of our dishes, making Persian food a delicious and wholesome choice for a balanced diet.</p>
         </section>
-        <section class="nuts-pic">
+        <section class="pic nuts-pic">
           <figure>
             <img src="img\walnuts.jpg" alt="walnuts">
           </figure> 
@@ -154,9 +159,9 @@
          
       </article>
 
-      <article class="meat">
+      <article class="content meat">
   
-        <section class="meat-txt">
+        <section class="txt meat-txt">
           <p>Made with fresh meat</p>
           <p>At our restaurant, we take pride in using only the freshest, high-quality meats, ensuring every dish is rich in flavor and cooked to perfection.
             Freshness is particularly important in Persian cuisine, where simple yet precise seasoning allows the natural taste of the meat to shine.
@@ -165,7 +170,7 @@
             of Persian cooking. For those with specific dietary preferences, we are happy to offer halal and kosher options upon request.</p>
         </section>
 
-        <section class="meat-pic">
+        <section class="pic meat-pic">
           <figure>
             <img src="img\meat.jpg" alt="vegetables">
           </figure> 
@@ -186,26 +191,24 @@
           <a class="button" href="#page">&nbsp;Top&nbsp;</a>
           <a class="button" href="#">&nbsp;Next &#8594;</a>
         </div>
-      </article>
-  
 
 
-        <hr />
+    </main>
+
+
+
+    <footer>
+      <article class="down">
+        <!-- <hr /> dsfa -->
         <h2>Block Container</h2>
         <aside class="block-container first">
-          <h2>I am the first block</h2>
-          <p>Lorem ipsum dolor sit ament, conspecitur sed misericordium elit.</p>
-        </aside>
-        <aside class="block-container second">
-          <h2>I am the second block</h2>
+          <!-- <h2>I am the first block</h2> -->
           <p>Lorem ipsum dolor sit ament, conspecitur sed misericordium elit.</p>
         </aside>
         <div class="clearfix"></div>
       </article>
-      <footer>
-        <p>&copy; 2025 Morteza Shariatee</p>
-      </footer>
-    </main>
+      <p>&copy; 2025 Morteza Shariatee</p>
+    </footer>
     
-  </body>
+</body>
 </html>

@@ -1,0 +1,109 @@
+:root {    /* how to define variables */
+    --bg: #121212;
+    --fg: #eaeaea;
+    --acc: #00a600;
+    --body:  Arial, Helvetica, sans-serif;
+}
+/* the order of a styles are important */
+a {
+    text-decoration: none;
+}
+a:link{
+    color: inherit;
+}
+a:visited{
+    color: inherit;
+}
+a:hover{
+    color: var(--acc);
+}
+a:active{
+    color: var(--acc);
+}
+html {
+    font-size: 62.5% ;
+}body {
+    font-size: 16;
+    font-family: var(--body);
+    font-weight: 600;
+    /* font-height: 1rem:  */
+
+}
+/* for background pattern */
+body {
+    background-image: url(../img/bubbles.svg);
+}
+
+h1, h2, h3 {
+    color: var(--bg);
+}
+
+main {
+    max-width: 78vw;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.95); /*95 percent opacity*/
+}
+
+
+.logo {
+    padding: 1rem;
+}
+
+section {
+    display: grid;
+    margin: 3rem auto;
+    gap: 3rem; /*space between columns*/
+}
+
+/* section.odd { */
+.odd {
+    grid-template-columns: 8fr 4fr;
+}
+/* section.even { */
+.even{
+    grid-template-columns: 4fr 8fr;
+}
+div.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.links {    
+
+}
+.more-links {
+    background: var(--acc);
+    color: var(var(--fg)) ;
+    width: 6.5rem;
+    padding: 2rem 3rem;
+    box-sizing: content-box;
+    text-align: center;     /* flex and grid are the main ways of centering things */
+    text-transform: uppercase;
+    margin: 2rem auto;
+    border-radius: .5rem;
+    border: 2px solid var(--acc);
+    opacity: .7;/* to use for hover */
+    transform: all 150ms ease-in;
+}
+
+.more-links:hover {
+    opacity: 1;
+}
+
+
+
+@media screen and (max-width: 768px){
+    nav {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    section.even, section.odd {
+        grid-template-columns: 1fr;
+    }
+    section.even div.poster{
+        order: -1
+
+    }
+    
+}
