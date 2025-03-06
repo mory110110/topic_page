@@ -351,3 +351,97 @@ article {
   
 }
 
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Hero Section Styling */
+header {
+  background-color: #f8f8f8;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Hero text styling */
+.hero-copy {
+  margin-bottom: 20px;
+}
+
+.hero-copy h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.hero-copy h1.small {
+  font-size: 18px;
+  font-weight: normal;
+  color: #666;
+}
+
+/* Hero Images - Flexbox Layout */
+.hero-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Each food image container */
+.children {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px; /* Rounded corners */
+}
+
+.children figure {
+  margin: 0;
+  position: relative;
+}
+
+.children img {
+  width: 200px;  /* Adjust the size of the images */
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Hover effect: Zoom + Dark Mask */
+.children:hover img {
+  transform: scale(1.2);
+}
+
+.children::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.children:hover::after {
+  opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-images {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .children img {
+      width: 100%; /* Full width for smaller screens */
+      max-width: 300px;
+      height: auto;
+  }
+}

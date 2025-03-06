@@ -58,6 +58,8 @@ section {
 /* section.odd { */
 .odd {
     grid-template-columns: 8fr 4fr;
+    outline: 2px, dashed, rgba(255, 255, 255);
+    outline-offset: -2rem;
 }
 /* section.even { */
 .even{
