@@ -432,7 +432,7 @@ div.buttons {
     grid-template-columns: 1fr 1fr;
   }
 
-  .persian, .vegetables, .legumes, .nuts .meat  {
+  .persian, .vegetables, .legumes, .nuts, .meat  {
       grid-template-columns: 1fr;
       /* gap: 0; */
   }
